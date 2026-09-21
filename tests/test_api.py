@@ -1,6 +1,7 @@
 from fastapi.testclient import TestClient
 from app.main import app
 
+
 client = TestClient(app)
 
 
@@ -15,6 +16,7 @@ def test_db_health():
 
     assert response.status_code == 200
 
+
 def test_predict_category():
     response = client.post(
         "/predict-category",
@@ -28,4 +30,16 @@ def test_predict_category():
     data = response.json()
 
     assert "predicted_category" in data
-    assert isinstance(data["predicted_category"], str)
+    assert isinstance(
+        data["predicted_category"],
+        str
+    )
+
+
+def test_ticket_analytics():
+    response = client.get("/analytics/tickets")
+
+    print("STATUS:", response.status_code)
+    print("RESPONSE:", response.json())
+
+    assert response.status_code == 200
