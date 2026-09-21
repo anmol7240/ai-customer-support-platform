@@ -43,3 +43,19 @@ def test_ticket_analytics():
     print("RESPONSE:", response.json())
 
     assert response.status_code == 200
+
+def test_ticket_not_found():
+    response = client.get("/tickets/999999")
+
+    assert response.status_code == 404
+
+def test_invalid_customer_ticket():
+    response = client.post(
+        "/tickets",
+        json={
+            "message": "My payment is not working",
+            "customer_id": 999999
+        }
+    )
+
+    assert response.status_code == 404
