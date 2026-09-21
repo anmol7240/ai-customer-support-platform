@@ -1,0 +1,121 @@
+message,category
+My money was deducted but my order was not placed.,Payment
+Payment failed but amount got debited from my bank account.,Payment
+I was charged twice for the same order.,Payment
+The payment gateway showed an error but money was still deducted.,Payment
+My card was charged but I never got an order confirmation.,Payment
+Amount debited from my account but transaction shows failed.,Payment
+Why was I charged for an item I did not order?,Payment
+Payment went through but the app still asks me to pay again.,Payment
+UPI payment deducted but order status still pending.,Payment
+I paid using credit card but received a payment failure message.,Payment
+Double payment done for order number 4521.,Payment
+My wallet balance was deducted without any order being created.,Payment
+Transaction successful on my end but seller says payment not received.,Payment
+EMI amount was deducted twice this month.,Payment
+Payment declined at checkout but bank sms shows debit.,Payment
+I want a refund for the damaged product I received.,Refund
+My refund has not been credited even after 10 days.,Refund
+Please process refund for my cancelled order.,Refund
+Refund status shows completed but I have not received the money.,Refund
+I returned the item but refund is still pending.,Refund
+How long does it take to get a refund after cancellation?,Refund
+I was promised a refund but nothing has come to my account.,Refund
+Refund amount credited is less than what I paid.,Refund
+Can you check why my refund request was rejected?,Refund
+I need to cancel my order and get a full refund.,Refund
+Refund process is taking too long for a defective product.,Refund
+My refund was approved but stuck in processing for a week.,Refund
+I returned the wrong size and want a refund instead of exchange.,Refund
+Requesting refund since the product never arrived.,Refund
+The refund amount does not match the original purchase price.,Refund
+My order has not been delivered yet even though it says delivered.,Delivery
+The delivery is delayed by more than a week.,Delivery
+Courier says delivered but I have not received the package.,Delivery
+Can you tell me the expected delivery date for my order?,Delivery
+The delivery partner never attempted to deliver my package.,Delivery
+My package arrived damaged during shipping.,Delivery
+"Wrong address delivery, I need to reschedule.",Delivery
+Delivery boy did not call before dropping the package.,Delivery
+Tracking shows my order stuck at the same location for days.,Delivery
+I received someone else's package instead of mine.,Delivery
+How do I change my delivery address for an active order?,Delivery
+The delivery slot I selected was not honored.,Delivery
+My order shows out for delivery for three days straight.,Delivery
+I want to reschedule my delivery to next week.,Delivery
+The parcel was left outside without any notification.,Delivery
+I want to cancel my order before it ships.,Order
+"My order was placed twice by mistake, please cancel one.",Order
+Can I modify the quantity in my existing order?,Order
+"I ordered the wrong size, can I change it before shipping?",Order
+My order confirmation email never arrived.,Order
+The order status has not updated in three days.,Order
+I want to add another item to my current order.,Order
+Order shows processing but was placed a week ago.,Order
+Can you combine my two separate orders into one shipment?,Order
+I need an invoice copy for my recent order.,Order
+My order got cancelled automatically without my request.,Order
+Where can I see the order history for my account?,Order
+I placed an order but it is not showing in my order list.,Order
+"The item I ordered is out of stock, can I swap it?",Order
+I want to change the payment method for a pending order.,Order
+"I am unable to access my account, it says invalid password.",Account
+My account was blocked without any reason.,Account
+I forgot my password and the reset link is not working.,Account
+Someone else logged into my account without my permission.,Account
+I want to change my registered email address.,Account
+"My account got suspended, please help me reactivate it.",Account
+I am not able to update my phone number on my profile.,Account
+How do I delete my account permanently?,Account
+My account shows incorrect personal details.,Account
+I cannot verify my account using the OTP sent.,Account
+I want to merge two accounts I created by mistake.,Account
+My login keeps failing even with the correct password.,Account
+I received a message saying my account was compromised.,Account
+"Please help me recover my account, I lost access to my email.",Account
+I am unable to link my account to a new phone number.,Account
+The app keeps crashing whenever I open the order page.,Technical
+I am getting an error message when trying to checkout.,Technical
+The website is not loading properly on my browser.,Technical
+The search feature is not returning any results.,Technical
+"I cannot upload my profile picture, it keeps failing.",Technical
+The app shows a blank screen after login.,Technical
+Payment page freezes and does not respond.,Technical
+I am facing a bug where the cart items keep disappearing.,Technical
+The notification settings are not saving properly.,Technical
+Getting a 500 server error while placing an order.,Technical
+The app crashes every time I try to apply a coupon.,Technical
+Images are not loading on the product listing page.,Technical
+The mobile app is stuck on the loading screen.,Technical
+"I cannot log out from the app, the button does not work.",Technical
+The dark mode setting keeps resetting on its own.,Technical
+I want to cancel my subscription plan.,Subscription
+How do I upgrade my current subscription to premium?,Subscription
+My subscription renewed automatically without my consent.,Subscription
+I am being charged for a subscription I already cancelled.,Subscription
+Can I pause my subscription for a couple of months?,Subscription
+I did not receive the benefits promised in my subscription plan.,Subscription
+How do I downgrade my subscription plan?,Subscription
+My subscription expired but I was not notified in advance.,Subscription
+I want a refund for my annual subscription I no longer use.,Subscription
+Please explain the difference between the basic and premium plans.,Subscription
+My free trial ended and I was charged without warning.,Subscription
+I cannot find the option to manage my subscription settings.,Subscription
+The subscription discount code did not apply at checkout.,Subscription
+I was charged for two subscription plans at once.,Subscription
+Can I switch my subscription billing from monthly to yearly?,Subscription
+What are your customer support working hours?,Other
+I have a general question about your privacy policy.,Other
+Do you offer gift cards for purchase?,Other
+How can I provide feedback about my recent experience?,Other
+I would like to know more about your loyalty program.,Other
+Can you share details about upcoming sales or discounts?,Other
+I want to know if you ship internationally.,Other
+What is your policy on exchanging gifted items?,Other
+How do I contact customer support directly?,Other
+I have a suggestion to improve your mobile app.,Other
+Do you have a physical store I can visit?,Other
+I wanted to compliment your support team for their help.,Other
+What documents do I need for a corporate bulk order?,Other
+Is there a referral program for existing customers?,Other
+Can you tell me more about your return policy in general?,Other
