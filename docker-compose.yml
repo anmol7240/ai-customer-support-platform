@@ -1,0 +1,27 @@
+services:
+
+  api:
+    build: .
+    container_name: ai-customer-support-api
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:${POSTGRES_PASSWORD}@postgres:5432/customer_support
+    depends_on:
+      - postgres
+
+
+  postgres:
+    image: postgres:18
+    container_name: ai-customer-support-db
+    environment:
+      POSTGRES_DB: customer_support
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+
+volumes:
+  postgres_data:
