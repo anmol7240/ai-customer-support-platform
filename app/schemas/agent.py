@@ -4,6 +4,7 @@ from pydantic import BaseModel, EmailStr, ConfigDict
 class AgentCreate(BaseModel):
     name: str
     email: EmailStr
+    password: str
 
 
 class AgentResponse(BaseModel):
