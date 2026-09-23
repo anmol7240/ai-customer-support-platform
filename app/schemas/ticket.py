@@ -13,6 +13,10 @@ class TicketResponse(BaseModel):
     priority: str | None
     status: str
     customer_id: int
+
+    # Assigned support agent
+    agent_id: int | None = None
+
     resolution_notes: str | None = None
     customer_rating: int | None = None
     customer_feedback: str | None = None
@@ -28,10 +32,14 @@ class TicketUpdate(BaseModel):
     priority: str | None = None
     status: str | None = None
     resolution_notes: str | None = None
+
     customer_rating: int | None = Field(
-    default=None,
-    ge=1,
-    le=5
-)
+        default=None,
+        ge=1,
+        le=5
+    )
+
     customer_feedback: str | None = None
 
+class TicketAssign(BaseModel):
+    agent_id: int

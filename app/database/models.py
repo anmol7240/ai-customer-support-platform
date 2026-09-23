@@ -1,4 +1,3 @@
-
 from sqlalchemy import String, Text, Integer, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -29,6 +28,64 @@ class Customer(Base):
         back_populates="customer"
     )
 
+class User(Base):
+    __tablename__ = "users"
+
+    id: Mapped[int] = mapped_column(
+        primary_key=True,
+        index=True
+    )
+
+    email: Mapped[str] = mapped_column(
+        String(150),
+        unique=True,
+        nullable=False
+    )
+
+    password_hash: Mapped[str] = mapped_column(
+        String(255),
+        nullable=False
+    )
+
+    role: Mapped[str] = mapped_column(
+        String(20),
+        nullable=False
+    )
+
+    customer_id: Mapped[int | None] = mapped_column(
+        ForeignKey("customers.id"),
+        nullable=True
+    )
+
+    agent_id: Mapped[int | None] = mapped_column(
+        ForeignKey("agents.id"),
+        nullable=True
+    )
+
+class Agent(Base):
+    __tablename__ = "agents"
+
+    id: Mapped[int] = mapped_column(
+        primary_key=True,
+        index=True
+    )
+
+    name: Mapped[str] = mapped_column(
+        String(100),
+        nullable=False
+    )
+
+    email: Mapped[str] = mapped_column(
+        String(150),
+        unique=True,
+        nullable=False
+    )
+
+    tickets = relationship(
+        "Ticket",
+        back_populates="agent"
+    )
+
 
 class Ticket(Base):
     __tablename__ = "tickets"
@@ -54,9 +111,9 @@ class Ticket(Base):
     )
 
     status: Mapped[str] = mapped_column(
-    String(20),
-    default="OPEN",
-    nullable=False
+        String(20),
+        default="OPEN",
+        nullable=False
     )
 
     resolution_notes: Mapped[str | None] = mapped_column(
@@ -79,7 +136,18 @@ class Ticket(Base):
         nullable=False
     )
 
+    # NEW: assigned support agent
+    agent_id: Mapped[int | None] = mapped_column(
+        ForeignKey("agents.id"),
+        nullable=True
+    )
+
     customer = relationship(
         "Customer",
+        back_populates="tickets"
+    )
+
+    agent = relationship(
+        "Agent",
         back_populates="tickets"
     )

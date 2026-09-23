@@ -24,3 +24,7 @@ httpx==0.27.2
 # Dashboard
 streamlit==1.39.0
 requests==2.32.3 
+
+# security
+bcrypt
+python-jose[cryptography]
