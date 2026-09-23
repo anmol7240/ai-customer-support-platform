@@ -28,6 +28,12 @@ from app.api.auth import router as auth_router
 
 Base.metadata.create_all(bind=engine)
 
+with engine.begin() as conn:
+    conn.execute(text("""
+        ALTER TABLE tickets
+        ADD COLUMN IF NOT EXISTS agent_id INTEGER
+    """))
+
 
 # =========================================================
 # FASTAPI APP
